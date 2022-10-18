@@ -1,4 +1,7 @@
-﻿string[] DataArray(string str)
+﻿// Напишите программу, которая из имеющегося массима строк формирует массив из строк, 
+// длина которых меньше либо равна 3 символам.
+
+string[] DataArray(string str)
 {
     Console.WriteLine(str);
     str = Console.ReadLine();
@@ -38,7 +41,11 @@ void PrintArray(string[] array)
     }
     Console.Write($"]");
 }
+Console.WriteLine("Программа, которая из имеющегося массива строк формирует массив из строк, длина которых меньше либо равна 3 символам!");
 string[] result = DataArray("Введите массив строк через запятую или пробел:");
 string[] result1 = ArrayFormation(result);
+Console.Write("Был введён массив:\n");
 PrintArray(result);
+Console.Write("\n");
+Console.WriteLine("Строки длина которых меньше либо равна 3 символам:");
 PrintArray(result1);
